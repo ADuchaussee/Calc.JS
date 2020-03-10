@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calcualtor">
+      
+        <div class="display">
+                <input type="input" id="input" readonly>
+        </div>
+        <div class="control">
+            <!--(div>button*4)*5-->
+            <div>
+                    <button id = "Left-par" value="(" class="operations"><b>(</b></button>
+                    <button id = "Right-par" value=")" class="operations" ><b>)</b></button>
+                    <button id = "Back-Space" onclick="Backspace()" class="Backspace" ><b><</b></button>
+                    <button  onclick="Clear()" class="Clear" ><b> CE </b></button>
+                </div>
+                <div>
+                    <button id="Seven" value="7" class="Number"><b>7</b></button>
+                    <button id="Eight" value="8" class="Number"><b>8</b></button>
+                    <button id="Nine" value="9" class="Number"><b>9</b></button>
+                    <button id="Divide" value="/" class="operations"><b>/</b></button>
+                </div>
+                <div>
+                    <button id="Four" value="4" class="Number"><b>4</b></button>
+                    <button id="Five" value="5" class="Number">5</button>
+                    <button id="Six" value="6" class="Number"><b>6</b></button>
+                    <button id="Multiply" value="*" class="operations"><b>x</b></button>
+                </div>
+                <div>
+                    <button id="One" value="1" class="Number"><b>1</b></button>
+                    <button id="Two" value="2" class="Number"><b>2</b></button>
+                    <button id="Three" value="3" class="Number"><b>3</b> </button>
+                    <button id="Subtract" value="-" class="operations"><b>-</b></button>
+                </div>
+             
+                <div>
+                    <button id="Zero" value="0" class="Number"><b>0</b></button>
+                    <button id="Decimal" value="." class="operations"><b> . </b></button>
+                    <button id="Equals" onclick="EvalThis()" class="operations" ><b>=</b></button>
+                    <button id="Addition" value="+" class="operations"> <b>+</b></button>
+                </div>
+         </div>
+    </div>
+    <script type="text/javascript" src="./scripts/operations.js"></script>
+ 
+</body>
+</html>
