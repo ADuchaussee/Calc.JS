@@ -1,6 +1,6 @@
-
-
+console.log("Startx");
 let list = [...document.querySelectorAll(".Number"), ... document.querySelectorAll(".operations")];
+console.log("list.length="+list.length);
 for(e of list){
     e.addEventListener('click', function(event)
     {
